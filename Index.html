@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InterMatch </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <h1 class="logo">InterMatch </h1>
+      <ul>
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="internship.html">Internships</a></li>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="login.html">Login </a></li>
+         <li><a href="Sign up.html">Sign up </a></li>
+          <li><a href="Eligibility.html">Eligibility</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h2>Find Your Dream Internship</h2>
+    <input type="text" placeholder="Search internships...">
+  </div>
+</section>
+
+<section class="section">
+  <h2>My Profile</h2>
+  <form class="profile-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name">
+    <label for="education">Education:</label>
+    <input type="text" id="education" placeholder="Enter your education">
+    <label for="skills">Skills:</label>
+    <input type="text" id="skills" placeholder="e.g. Python, ML, React">
+    <label for="interests">Interests:</label>
+    <input type="text" id="interests" placeholder="e.g. Data Science, Web Dev">
+    <!-- ✅ Resume Upload -->
+    <label for="resume">Upload Resume:</label>
+    <input type="file" id="resume" accept=".pdf,.doc,.docx">
+    <button type="submit">Save</button>
+  </form>
+</section>
+
+
+<!-- Internships Section -->
+<section class="section">
+  <h2>Recommended Internships</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Web Development Internship</h3>
+      <p><span class="match">95% Match</span></p>
+      <button>Apply</button>
+    </div>
+    <div class="card">
+      <h3>AI Research Internship</h3>
+      <p><span class="match">89% Match</span></p>
+      <button>Apply</button>
+    </div>
+  </div>
+</section>
+
+<!-- Video Tutorials -->
+<section class="section">
+  <h2>Video Tutorials</h2>
+  <div class="video-grid">
+    <a href="https://www.youtube.com/watch?v=aPDlCCqzZnA" target="_blank">
+    <img src="https://i.ytimg.com/vi/aPDlCCqzZnA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCUBvtL64oCF_a3jAKDk8aavCW38Q" alt="Video 1">
+    </a>
+     <a href="https://www.youtube.com/watch?v=shgX1xPLpio" target="_blank">
+    <img src="https://i.ytimg.com/an_webp/shgX1xPLpio/mqdefault_6s.webp?du=3000&sqp=CNKLmsYG&rs=AOn4CLB6dV79OqqTBF2pqVTPEHuDGd0-SQ" alt="Video 2">
+  </a>
+  <a href="https://www.youtube.com/watch?v=WDf6V7VNRPY" target="_blank">
+    <img src="https://i.ytimg.com/vi/WDf6V7VNRPY/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCaubjXsTMW04KcPJ_NwX8zFVeloA" alt="Video 3">
+  </a>
+  </div>
+</section>
+
+ <!-- Chatbot Icon (always visible in corner) -->
+<div id="chatbot-icon">
+  <img src="https://cdn-icons-png.flaticon.com/128/13330/13330989.png" alt="Chatbot AI">
+</div>
+
+<!-- Chatbot Window (hidden initially) -->
+<div id="chatbot-window" class="chat-container" style="display: none;">
+  <div class="chat-box" id="chat-box"></div>
+  <div class="input-box">
+    <input type="text" id="user-input" placeholder="Type here...">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
+
+
+  <!-- Footer -->
+ <footer>
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>InterMatch </h3>
+      <p>Powered by AI for Smart Internships</p>
+      <p>© 2025 InterMatch </p>
+    </div>
+
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="About.html">About Us</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h4>Get in Touch</h4>
+      <p>Email: support@intermatch.gmail.com</p>
+      <p>Phone: +91-**********</p>
+      <p>New Delhi, India</p>
+    </div>
+
+    <div class="footer-section">
+      <h4>Follow Us</h4>
+      <div class="socials">
+        <a href="#"><img src="https://linkedin.com/favicon.ico" alt="LinkedIn"></a>
+        <p>LinkedIn</p>
+        <a href="#"><img src="https://twitter.com/favicon.ico" alt="Twitter"></a>
+        <p>Twitter</p>
+    </div>
+    </div>
+  </div>
+</footer>
+  <script src="chatbot.js"></script>

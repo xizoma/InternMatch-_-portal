@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background:url(https://internshala.com/_next/image?url=%2Fassets%2Fimages%2Finfo%2Fabout_us%2Fbanners%2Fbanner-r1920.png&w=1920&q=75) no-repeat center center/cover;
+    display: flex;
+}
+.about-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.about-text {
+  flex: 1.2;
+  padding: 50px;
+  background: #ffffff;
+}
+
+.about-text h1 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.about-text h2 {
+  margin-top: 20px;
+  color: #27ae60;
+}
+
+.about-text p {
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eaf6f6;
+}
+
+.about-image img {
+  max-width: 90%;
+  height: auto;    /* keeps original proportion */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
